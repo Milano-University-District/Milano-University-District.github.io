@@ -1,0 +1,73 @@
+// Spacing Top
+@for $i from 0 through 6 {
+	.mt-#{$i} {
+		margin-top: $i * 1rem;
+	}
+	.pt-#{$i} {
+		padding-top: $i * 1rem;
+	}
+}
+
+// Spacing Bottom
+@for $i from 0 through 6 {
+	.mb-#{$i} {
+		margin-bottom: $i * 1rem;
+	}
+	.pb-#{$i} {
+		padding-bottom: $i * 1rem;
+	}
+}
+
+// Spacing Left
+@for $i from 0 through 6 {
+	.ml-#{$i} {
+		margin-left: $i * 1rem;
+	}
+	.pl-#{$i} {
+		padding-left: $i * 1rem;
+	}
+}
+
+// Spacing Right
+@for $i from 0 through 6 {
+	.mr-#{$i} {
+		margin-right: $i * 1rem;
+	}
+	.pr-#{$i} {
+		padding-right: $i * 1rem;
+	}
+}
+
+// Spacing Horizontal
+@for $i from 0 through 6 {
+	.mx-#{$i} {
+		margin-left: $i * 1rem;
+		margin-right: $i * 1rem;
+	}
+	.px-#{$i} {
+		padding-left: $i * 1rem;
+		padding-right: $i * 1rem;
+	}
+}
+
+// Spacing Vertical
+@for $i from 0 through 6 {
+	.my-#{$i} {
+		margin-top: $i * 1rem;
+		margin-bottom: $i * 1rem;
+	}
+	.py-#{$i} {
+		padding-top: $i * 1rem;
+		padding-bottom: $i * 1rem;
+	}
+}
+
+// Spacing All
+@for $i from 0 through 6 {
+	.m-#{$i} {
+		margin: $i * 1rem;
+	}
+	.p-#{$i} {
+		padding: $i * 1rem;
+	}
+}

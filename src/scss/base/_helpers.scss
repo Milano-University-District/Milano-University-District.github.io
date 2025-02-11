@@ -1,0 +1,73 @@
+.container {
+	position: relative;
+	overflow: scroll;
+	scroll-snap-type: both mandatory;
+	overscroll-behavior-x: contain;
+	width: 100vw;
+	height: 100vh;
+}
+
+.section {
+	position: relative;
+	scroll-snap-stop: always;
+	scroll-snap-align: center;
+	height: 100%;
+}
+
+.mobile {
+	display: none !important;
+	@include for-phone-only {
+		display: block !important;
+	}
+}
+.desktop {
+	display: none !important;
+	@include for-tablet-portrait-up {
+		display: block !important;
+	}
+}
+
+.section-padding {
+	padding-left: $section-padding;
+	padding-right: $section-padding;
+}
+
+.center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	flex-direction: row;
+}
+.col {
+	flex-direction: column;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.bg-green {
+	background-color: $green;
+}
+.bg-purple {
+	background-color: $purple;
+}
+.bg-blue {
+	background-color: $blue;
+}
+.bg-brown {
+	background-color: $brown;
+}
+.bg-dark-pink {
+	background-color: $dark-pink;
+}
+.bg-black {
+	background-color: black;
+}
+
+.bottom-border-blue {
+	border-bottom: 10px solid $light-blue;
+	width: fit-content;
+}

@@ -1,0 +1,96 @@
+/**
+ * Basic typography style for copy text
+ */
+
+html {
+	color: $text-color;
+	font-family: $text-font-stack;
+	@include for-phone-only {
+		font-size: 0.7rem;
+	}
+	@include for-tablet-portrait-up {
+		font-size: 0.7rem;
+	}
+	@include for-tablet-landscape-up {
+		font-size: 0.75rem;
+	}
+	@include for-desktop-up {
+		font-size: 1.2rem;
+	}
+}
+
+.title {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	letter-spacing: -0.84px;
+	line-height: 95%;
+	font-style: normal;
+}
+
+.title2 {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 3.5rem;
+	font-weight: 500;
+	letter-spacing: -0.8px;
+	line-height: 95%;
+}
+
+.title3 {
+	font-family: "Familjen Grotesk";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 95%; /* 19px */
+	letter-spacing: -0.4px;
+}
+
+.title4 {
+	font-family: "Helvetica Neue";
+	font-size: 28.944px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100%; /* 22.944px */
+	letter-spacing: 0.918px;
+}
+
+.subtitle {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+	line-height: 95%; /* 42.75px */
+	letter-spacing: -0.9px;
+}
+
+.text-light {
+	font-weight: 300;
+}
+
+.text-normal {
+	font-weight: 500;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-green {
+	color: $light-green;
+}
+.text-light-purple {
+	color: $light-purple;
+}
+.text-light-blue {
+	color: $light-blue;
+}
+.text-white {
+	color: white;
+}
+
+.text-right {
+	text-align: right;
+}
