@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
-@import "utilities/variables", "utilities/functions", "utilities/mixins";
+@use "utilities/variables";
+@use "utilities/functions";
+@use "utilities/mixins";
 
-@import "base/base", "base/fonts", "base/typography", "base/helpers",
-	"base/spacing";
+@use "base/base";
+@use "base/fonts";
+@use "base/typography";
+@use "base/helpers";
+@use "base/spacing";
 
-@import "layout/header", "layout/footer";
+@use "layout/header";
+@use "layout/footer";
 
-@import "components/button";
+@use "components/button";
 
-@import "pages/home";
+@use "pages/home";

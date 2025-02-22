@@ -1,20 +1,23 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
 /**
  * Basic typography style for copy text
  */
 
 html {
-	color: $text-color;
-	font-family: $text-font-stack;
-	@include for-phone-only {
+	color: variables.$text-color;
+	font-family: variables.$text-font-stack;
+	@include mixins.for-phone-only {
 		font-size: 0.7rem;
 	}
-	@include for-tablet-portrait-up {
+	@include mixins.for-tablet-portrait-up {
 		font-size: 0.7rem;
 	}
-	@include for-tablet-landscape-up {
+	@include mixins.for-tablet-landscape-up {
 		font-size: 0.75rem;
 	}
-	@include for-desktop-up {
+	@include mixins.for-desktop-up {
 		font-size: 1.2rem;
 	}
 }
@@ -79,13 +82,13 @@ html {
 }
 
 .text-green {
-	color: $light-green;
+	color: variables.$light-green;
 }
 .text-light-purple {
-	color: $light-purple;
+	color: variables.$light-purple;
 }
 .text-light-blue {
-	color: $light-blue;
+	color: variables.$light-blue;
 }
 .text-white {
 	color: white;

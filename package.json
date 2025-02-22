@@ -1,23 +1,24 @@
 {
-	"name": "mud-landing",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack --mode production",
-		"dev": "webpack --mode development --watch"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"css-loader": "^6.10.0",
-		"mini-css-extract-plugin": "^2.8.0",
-		"node-sass": "^9.0.0",
-		"sass-loader": "^14.1.0",
-		"style-loader": "^3.3.4",
-		"webpack": "^5.90.1",
-		"webpack-cli": "^5.1.4"
-	}
+  "name": "mud-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "serve": "webpack serve --mode development --open --hot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.85.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
 }

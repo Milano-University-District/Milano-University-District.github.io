@@ -1,3 +1,6 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
 .container {
 	position: relative;
 	overflow: scroll;
@@ -16,20 +19,20 @@
 
 .mobile {
 	display: none !important;
-	@include for-phone-only {
+	@include mixins.for-phone-only {
 		display: block !important;
 	}
 }
 .desktop {
 	display: none !important;
-	@include for-tablet-portrait-up {
+	@include mixins.for-tablet-portrait-up {
 		display: block !important;
 	}
 }
 
 .section-padding {
-	padding-left: $section-padding;
-	padding-right: $section-padding;
+	padding-left: variables.$section-padding;
+	padding-right: variables.$section-padding;
 }
 
 .center-content {
@@ -49,25 +52,25 @@
 }
 
 .bg-green {
-	background-color: $green;
+	background-color: variables.$green;
 }
 .bg-purple {
-	background-color: $purple;
+	background-color: variables.$purple;
 }
 .bg-blue {
-	background-color: $blue;
+	background-color: variables.$blue;
 }
 .bg-brown {
-	background-color: $brown;
+	background-color: variables.$brown;
 }
 .bg-dark-pink {
-	background-color: $dark-pink;
+	background-color: variables.$dark-pink;
 }
 .bg-black {
 	background-color: black;
 }
 
 .bottom-border-blue {
-	border-bottom: 10px solid $light-blue;
+	border-bottom: 10px solid variables.$light-blue;
 	width: fit-content;
 }
