@@ -1,7 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-.container {
+.main {
 	position: relative;
 	overflow: scroll;
 	scroll-snap-type: both mandatory;
@@ -12,43 +12,15 @@
 
 .section {
 	position: relative;
+	scroll-snap-type: proximity;
 	scroll-snap-stop: always;
-	scroll-snap-align: center;
-	height: 100%;
-}
-
-.mobile {
-	display: none !important;
-	@include mixins.for-phone-only {
-		display: block !important;
-	}
-}
-.desktop {
-	display: none !important;
-	@include mixins.for-tablet-portrait-up {
-		display: block !important;
-	}
-}
-
-.section-padding {
-	padding-left: variables.$section-padding;
-	padding-right: variables.$section-padding;
-}
-
-.center-content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.row {
-	flex-direction: row;
-}
-.col {
-	flex-direction: column;
-}
-
-.overflow-hidden {
+	scroll-snap-align: start;
 	overflow: hidden;
+	min-height: 110%;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
 }
 
 .bg-green {
@@ -68,9 +40,4 @@
 }
 .bg-black {
 	background-color: black;
-}
-
-.bottom-border-blue {
-	border-bottom: 10px solid variables.$light-blue;
-	width: fit-content;
 }

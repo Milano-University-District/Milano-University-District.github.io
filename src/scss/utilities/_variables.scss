@@ -25,4 +25,12 @@ $light-blue: #5b6bff;
 $brown: #69311e;
 $dark-pink: #5d1335;
 
-$section-padding: 2.5rem;
+$color-section-1: $blue;
+
+$section-colors: (
+	1: $blue,
+	2: $light-purple,
+	3: $light-green,
+	4: $purple,
+	5: $brown,
+)

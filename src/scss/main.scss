@@ -1,18 +1,19 @@
 @charset "UTF-8";
 
 @use "utilities/variables";
-@use "utilities/functions";
 @use "utilities/mixins";
 
 @use "base/base";
-@use "base/fonts";
 @use "base/typography";
 @use "base/helpers";
 @use "base/spacing";
+@use "base/responsive";
 
-@use "layout/header";
-@use "layout/footer";
-
-@use "components/button";
+@use "layout/section_2";
+@use "layout/section_3";
+@use "layout/section_4";
+@use "layout/section_5";
+@use "layout/section_6";
+@use "layout/section_7";
 
 @use "pages/home";

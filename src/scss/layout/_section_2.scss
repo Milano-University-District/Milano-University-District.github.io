@@ -1,0 +1,68 @@
+@use "../utilities/mixins";
+
+.section-2 > .section-body {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    .activity-photo {
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        h2 {
+            position: absolute;
+            color: white;
+            margin: 1rem;
+        }
+        padding: 1rem;
+        position: relative;
+    }
+    .activity-text-1 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .activity-text {
+        padding: 1rem;
+    }
+    @include mixins.for-phone-only {
+        .activity-text {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .activity-photo {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include mixins.for-tablet-portrait {
+        .activity-text {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .activity-photo {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    @include mixins.for-tablet-landscape-up {
+        .activity-text-1 {
+            width: 45%;
+            padding: 1rem;
+            padding-right: 2rem;
+        }
+        .activity-text-2 {
+            width: 55%;
+            padding: 1rem;
+            padding-right: 10rem;
+        }
+        .activity-photo {
+            width: 25%;
+        }
+    }
+}

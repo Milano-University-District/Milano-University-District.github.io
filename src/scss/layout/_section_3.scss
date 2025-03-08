@@ -1,0 +1,56 @@
+@use "../utilities/mixins";
+
+.section-3 > .section-body {
+    .exhibit-photo {
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    @include mixins.for-phone-only {
+        .exhibit-info {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .exhibit-photo {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include mixins.for-tablet-portrait {
+        .exhibit-info {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .exhibit-photo {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include mixins.for-tablet-landscape-up {
+        .exhibit-info {
+            width: 33%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .exhibit-photo {
+            width: 33%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            order: 4;
+        }
+        .exhibit-2 {
+            order: 2;
+        }
+        .exhibit-3 {
+            order: 3;
+        }
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+}

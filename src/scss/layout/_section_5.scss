@@ -1,0 +1,65 @@
+@use "../utilities/mixins";
+
+.section-5 > .section-body {
+    .map {
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    @include mixins.for-phone-only {
+        .map {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .map-info {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include mixins.for-tablet-portrait {
+        .map {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .map-info {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    @include mixins.for-tablet-landscape-up {
+        .map {
+            width: 50%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .map-info {
+            width: 50%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .map-card {
+        background-color: #e6e6e6;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-flow: column wrap;
+        max-height: 30rem;
+    }
+    .map-card-element {
+        width: 50%;
+    }
+    .map-info {
+        p {
+            padding-bottom: auto;
+        }
+    }
+}
