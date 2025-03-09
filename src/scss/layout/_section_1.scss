@@ -1,0 +1,117 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+$primary: variables.$light-blue;
+
+.section-1>.section-header {
+    .section-header-title {
+        color: $primary;
+    }
+
+    .section-header-description {
+        pre {
+            color: $primary;
+        }
+
+        .modal-btn {
+            background-color: $primary;
+        }
+    }
+}
+
+.section-1>.section-body {}
+
+.modal-section.section-1 {
+    background-color: $primary;
+
+    .section-header {
+        .section-header-title {
+            color: white;
+        }
+
+        .section-header-description {
+            pre {
+                color: white;
+            }
+
+            .modal-btn {
+                background-color: white;
+            }
+        }
+    }
+
+}
+
+.modal-section.section-1>.section-body {
+    .photo {
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .info-card {
+        background-color: #e6e6e6;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+
+        h2 {
+            margin-top: 0;
+            color: $primary;
+        }
+
+        .info-card-inner {
+            display: flex;
+            flex-flow: row wrap;
+
+            .bold {
+                font-size: 1.5rem;
+            }
+
+            div {
+                width: 100%;
+                padding: 0.5rem;
+            }
+
+            @include mixins.for-tablet-portrait-up {
+                div {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .info {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .photo {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @include mixins.for-tablet-portrait-up {
+        .photo {
+            display: block;
+            width: 30%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .info {
+            width: 70%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+
+}

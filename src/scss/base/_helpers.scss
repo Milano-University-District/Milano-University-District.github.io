@@ -1,43 +1,28 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-.main {
-	position: relative;
-	overflow: scroll;
-	scroll-snap-type: both mandatory;
-	overscroll-behavior-x: contain;
-	width: 100vw;
-	height: 100vh;
-}
 
-.section {
-	position: relative;
-	scroll-snap-type: proximity;
-	scroll-snap-stop: always;
-	scroll-snap-align: start;
-	overflow: hidden;
-	min-height: 110%;
-	padding-left: 2.5rem;
-	padding-right: 2.5rem;
-	padding-top: 1rem;
-	padding-bottom: 2rem;
-}
 
 .bg-green {
 	background-color: variables.$green;
 }
+
 .bg-purple {
 	background-color: variables.$purple;
 }
+
 .bg-blue {
 	background-color: variables.$blue;
 }
+
 .bg-brown {
 	background-color: variables.$brown;
 }
+
 .bg-dark-pink {
 	background-color: variables.$dark-pink;
 }
+
 .bg-black {
 	background-color: black;
 }

@@ -1,67 +1,200 @@
 @use "../utilities/mixins";
+@use "../utilities/variables";
 
-.section-2 > .section-body {
+$primary: variables.$light-purple;
+
+.section-2>.section-header {
+    .section-header-title {
+        color: $primary;
+    }
+
+    .section-header-description {
+        pre {
+            color: $primary;
+        }
+
+        .modal-btn {
+            background-color: $primary;
+        }
+    }
+}
+
+.section-2>.section-body {
     margin-left: -1rem;
     margin-right: -1rem;
+
     .activity-photo {
         img {
             object-fit: cover;
             max-width: 100%;
             max-height: 100%;
         }
+
         h2 {
             position: absolute;
             color: white;
             margin: 1rem;
         }
+
         padding: 1rem;
         position: relative;
     }
+
     .activity-text-1 {
         font-size: 1.2rem;
         font-weight: bold;
     }
+
     .activity-text {
         padding: 1rem;
     }
+
     @include mixins.for-phone-only {
         .activity-text {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
+
         .activity-photo {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
     }
+
     @include mixins.for-tablet-portrait {
         .activity-text {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
+
         .activity-photo {
             width: 50%;
             margin-left: auto;
             margin-right: auto;
         }
+
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    @include mixins.for-tablet-landscape {
+        .activity-text {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .activity-photo {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         margin-left: 10rem;
         margin-right: 10rem;
     }
-    @include mixins.for-tablet-landscape-up {
+
+    @include mixins.for-desktop-up {
         .activity-text-1 {
             width: 45%;
             padding: 1rem;
             padding-right: 2rem;
         }
+
         .activity-text-2 {
             width: 55%;
             padding: 1rem;
             padding-right: 10rem;
         }
+
         .activity-photo {
+            width: 25%;
+        }
+
+        margin-top: 5rem;
+    }
+}
+
+.modal-section.section-2 {
+    background-color: $primary;
+
+    .section-header {
+        .section-header-title {
+            color: white;
+        }
+
+        .section-header-description {
+            pre {
+                color: white;
+            }
+
+            .modal-btn {
+                background-color: white;
+            }
+        }
+    }
+
+}
+
+.modal-section.section-2>.section-body {
+    margin-left: -1rem;
+    margin-right: -1rem;
+
+    .activity {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        h3 {
+            color: white;
+        }
+    }
+
+    .activity-card {
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+
+        h3 {
+            color: black;
+        }
+    }
+
+    @include mixins.for-phone-only {
+        .activity {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @include mixins.for-tablet-portrait {
+        .activity {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    @include mixins.for-tablet-landscape {
+        .activity {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    @include mixins.for-desktop-up {
+
+        .activity {
             width: 25%;
         }
     }

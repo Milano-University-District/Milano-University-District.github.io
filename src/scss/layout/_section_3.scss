@@ -1,6 +1,26 @@
 @use "../utilities/mixins";
+@use "../utilities/variables";
 
-.section-3 > .section-body {
+$primary: variables.$light-green;
+
+.section-3>.section-header {
+    .section-header-title {
+        color: $primary;
+    }
+
+    .section-header-description {
+        pre {
+            color: $primary;
+        }
+
+        .modal-btn {
+            background-color: $primary;
+        }
+    }
+}
+
+
+.section-3>.section-body {
     .exhibit-photo {
         img {
             object-fit: cover;
@@ -8,49 +28,79 @@
             max-height: 100%;
         }
     }
+
     @include mixins.for-phone-only {
         .exhibit-info {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
+
         .exhibit-photo {
             width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
     }
+
     @include mixins.for-tablet-portrait {
         .exhibit-info {
             width: 55%;
             margin-left: auto;
             margin-right: auto;
         }
+
         .exhibit-photo {
             width: 55%;
             margin-left: auto;
             margin-right: auto;
         }
     }
+
     @include mixins.for-tablet-landscape-up {
         .exhibit-info {
             width: 33%;
             padding-left: 1rem;
             padding-right: 1rem;
         }
+
         .exhibit-photo {
             width: 33%;
             padding-left: 1rem;
             padding-right: 1rem;
             order: 4;
         }
+
         .exhibit-2 {
             order: 2;
         }
+
         .exhibit-3 {
             order: 3;
         }
+
         margin-left: -1rem;
         margin-right: -1rem;
     }
+}
+
+.modal-section.section-3 {
+    background-color: $primary;
+
+    .section-header {
+        .section-header-title {
+            color: white;
+        }
+
+        .section-header-description {
+            pre {
+                color: white;
+            }
+
+            .modal-btn {
+                background-color: white;
+            }
+        }
+    }
+
 }

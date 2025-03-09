@@ -1,6 +1,34 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
 .photo_show {
     img {
         object-fit: cover;
         max-width: 100%;
+    }
+}
+
+.section-4>.section-header>.section-header-title {
+    color: variables.$purple;
+}
+
+.section-4>.section-body {
+    @include mixins.for-phone-only {
+        padding-top: 12rem;
+    }
+
+    @include mixins.for-tablet-portrait {
+        padding-top: 8rem;
+    }
+
+    @include mixins.for-tablet-landscape {
+        padding-top: 5rem;
+    }
+
+    @include mixins.for-desktop {}
+
+    @include mixins.for-big-desktop {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
