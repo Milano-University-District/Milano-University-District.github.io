@@ -1,0 +1,59 @@
+@use "../utilities/mixins";
+@use "../utilities/variables";
+
+
+
+#footer-description {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.section-0.section {
+    display: flex;
+    flex-flow: column;
+    // justify-content: space-between;
+    padding-bottom: 0.5rem;
+}
+
+.section-0>.section-header {
+    span {
+        color: variables.$light-blue;
+    }
+}
+
+.section-0 > .section-footer {
+    margin-top: auto;
+    div {
+        margin: 0.25rem;
+    }
+}
+
+.section-0 > .section-body {
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }  
+    div {
+        margin: auto;
+    } 
+    @include mixins.for-phone-only {
+        div {
+            width: 100%;
+            margin-top: 10rem;
+        }
+    }
+    @include mixins.for-tablet-portrait {
+        div {
+            width: 80%;
+            margin-top: 5rem;
+        }
+    }
+    @include mixins.for-tablet-landscape-up {
+        div {
+            width: 70%;
+            margin-top: 2rem;
+        }
+    }
+
+}

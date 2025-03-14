@@ -2,8 +2,6 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap");
-
 * {
 	box-sizing: border-box;
 }
@@ -20,6 +18,10 @@ a {
 	color: inherit;
 	-webkit-text-decoration: inherit;
 	text-decoration: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 button {
