@@ -10,18 +10,7 @@
 html {
 	color: variables.$text-color;
 	font-family: "Funnel Display", sans-serif;
-	@include mixins.for-phone-only {
-		font-size: 0.7rem;
-	}
-	@include mixins.for-tablet-portrait-up {
-		font-size: 0.85rem;
-	}
-	@include mixins.for-tablet-landscape-up {
-		font-size: 1rem;
-	}
-	@include mixins.for-desktop-up {
-		font-size: 1.15rem;
-	}
+	font-size: 1em;
 }
 
 .title {

@@ -129,6 +129,8 @@ $primary: #ea579a;
     .activity {
         padding-left: 1rem;
         padding-right: 1rem;
+        display: flex;
+        flex-flow: column nowrap;
 
         h3 {
             color: white;
@@ -139,6 +141,7 @@ $primary: #ea579a;
         background-color: white;
         border-radius: 1rem;
         padding: 1rem;
+        flex-grow: 1;
 
         h3 {
             color: black;
