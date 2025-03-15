@@ -1,7 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-$primary: variables.$light-green;
+$primary: #4bd14b;
 
 .section-3>.section-header {
     .section-header-title {

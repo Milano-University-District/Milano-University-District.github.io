@@ -30,11 +30,14 @@ window.onload = () => {
 			event.target.parentElement.style.display = "none";
 		}
 	};
-	document.getElementById("sponsor-logo-1").onclick = (_) => {
-		document.getElementById("sponsor-1").style.display = "flex";
-	};
-	document.getElementById("btn-sponsor1-close").onclick = (_) => {
-		document.getElementById("sponsor-1").style.display = "none";
-	};
+	for (let i = 1; i <= 12; i++) {
+		document.getElementById("sponsor-logo-"+i).onclick = (_) => {
+			document.getElementById("sponsor-"+i).style.display = "flex";
+		};
+		document.getElementById("btn-sponsor-close-"+i).onclick = (_) => {
+			document.getElementById("sponsor-"+i).style.display = "none";
+		};
+	}
+
 
 };

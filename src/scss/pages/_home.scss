@@ -24,7 +24,16 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
+
+  // overflow-y: scroll;
+  // height: 100vh;
+  // padding-bottom: 40vh;
+
+  @include mixins.for-desktop-up {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 
 .modal {
@@ -47,6 +56,11 @@
   padding-right: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
+
+  // @include mixins.for-desktop-up {
+  //   max-width: 1200px;
+  //   margin: auto;
+  // }
 }
 
 .modal-open {

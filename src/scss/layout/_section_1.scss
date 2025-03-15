@@ -1,7 +1,7 @@
 @use "../utilities/mixins";
 @use "../utilities/variables";
 
-$primary: variables.$light-blue;
+$primary: #5b6bff;
 
 .section-1>.section-header {
     .section-header-title {
@@ -67,7 +67,7 @@ $primary: variables.$light-blue;
         margin-right: -1rem;
     }
     .card {
-        background-color: #e6e6e6;
+        background-color: #f2f2f2;
         padding: 1rem;
         padding-bottom: 1px;
         border-radius: 1rem;
@@ -118,7 +118,7 @@ $primary: variables.$light-blue;
     }
 
     .info-card {
-        background-color: #e6e6e6;
+        background-color: #f2f2f2;
         padding: 1rem;
         border-radius: 1rem;
         margin-bottom: 1rem;
