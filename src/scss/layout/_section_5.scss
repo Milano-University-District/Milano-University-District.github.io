@@ -42,12 +42,12 @@ $secondary: #4d2e17;
     }
     @include mixins.for-tablet-portrait {
         .map {
-            width: 55%;
+            width: 70%;
             margin-left: auto;
             margin-right: auto;
         }
         .map-info {
-            width: 55%;
+            width: 70%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -71,8 +71,7 @@ $secondary: #4d2e17;
         padding: 1rem;
         border-radius: 1rem;
         display: flex;
-        flex-flow: column wrap;
-        max-height: 15rem;
+        flex-flow: row wrap;
 
         h3 {
             width: 50%;

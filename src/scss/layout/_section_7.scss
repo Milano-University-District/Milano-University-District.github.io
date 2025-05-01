@@ -19,7 +19,7 @@
         img.sponsor-logo {
             object-fit: cover;
             max-width: 100%;
-            max-height: 100%;
+            max-height: 70%;
             margin: auto;
             padding: 1rem;
         }
@@ -59,6 +59,7 @@
         position: relative;
         overflow: scroll;
         min-height: 100%;
+        width: 100%;
     }
 
     .sponsor-content {
